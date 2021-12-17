@@ -1,3 +1,10 @@
+import Styles from './App.css'
+import Shopping from "./views/Shopping/Shopping";
+
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className={Styles.App}>
+    <Shopping />
+    </div>
+  )
 }

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bakbak One', sans-serif;
+    width: 350px;
+    background-color: lightgray;
+    border: 1px solid white;
+    border-radius: 2em;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    background: rgb(0,36,32);
+    background: linear-gradient(180deg, rgba(0,36,32,0.9430147058823529) 0%, rgba(9,91,121,1) 59%, rgba(9,72,121,1) 95%);
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3em;
+}
+
+h1 {
+    color: rgba(9,72,121,1);
+}
+
+button {
+    font-family: 'Bakbak One', sans-serif;
+    font-size: .8em;
+    border: none;
+    background-color: rgba(9,72,121,1);
+    color: white;
+    border-radius: .5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkslategrey;
+    /* border: 1px dashed white;  */
+}
+
+button:active {
+    background-color: white;
+    border: 1px solid rgba(9,72,121,1); 
+    color: black;
+}
+
+form input {
+    height: 30px;
+    /* width: 200px; */
+    margin-right: 8px;
+    border-radius: .5em;
+    border: none;
+    padding-left: 10px;
+}
+
+form button {
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
