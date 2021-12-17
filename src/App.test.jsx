@@ -37,6 +37,19 @@ it('should allow editing of an item in the list when edit is pressed', () => {
 
     const editInput = screen.getByRole('textbox', { name: 'edit' })
     expect(editInput).toBeInTheDocument()
+})
 
+it('should save an edit of an item in the list when save is pressed', () => {
+    const { getByText } = render(<ItemsProvider><App /></ItemsProvider>)
+    const editBaconButton = screen.getByRole('button', { name: 'edit Bacon' })
+    userEvent.click(editBaconButton)
+
+    const editInput = screen.getByRole('textbox', { name: 'edit' })
+    userEvent.type(editInput, ' (Turkey)')
+
+    const saveButton = screen.getByRole('button', { name: 'save' })
+    userEvent.click(saveButton)
+
+    expect(getByText('Bacon (Turkey)')).toBeInTheDocument()
 })
 
